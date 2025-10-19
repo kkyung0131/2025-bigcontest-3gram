@@ -1,0 +1,13 @@
+name: cust-risk-score-dashboard
+title: cust-risk-score-dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15762513
+bundleId: 11037494
+url: https://3-gram.shinyapps.io/cust-risk-score-dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|sales_app.R

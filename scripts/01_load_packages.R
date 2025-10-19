@@ -6,6 +6,7 @@
 # ============================================================
 
 # ---- Load Required Packages ----
+options(scipen = 999)
 library(tidymodels)
 library(tidyverse)
 library(bonsai)   

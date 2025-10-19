@@ -167,6 +167,9 @@ train_quarterly_cust_models <- function(train_df) {
 #' @param train_df Preprocessed training dataframe with mkt_status
 #' @return Fitted workflow object
 train_quarterly_mkt_models <- function(train_df) {
+  
+  train_df <- train_df %>% select(-id)
+  
   xgb_spec <- boost_tree(
     trees = 1000, mtry = 30, min_n = 10, learn_rate = 0.01) %>% 
     set_engine("xgboost") %>% 

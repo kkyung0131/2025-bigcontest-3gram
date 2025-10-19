@@ -1,0 +1,12 @@
+name: store_risk_score_dashboard
+title: store_risk_score_dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15749458
+bundleId: 11036149
+url: https://3-gram.shinyapps.io/store_risk_score_dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,13 @@
+name: sales-risk-score-dashboard
+title: sales-risk-score-dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15762439
+bundleId: 11037336
+url: https://3-gram.shinyapps.io/sales-risk-score-dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app - 복사본 (2).R|app.R|sample_aa.csv|sample_bb.csv|sample_dd.csv

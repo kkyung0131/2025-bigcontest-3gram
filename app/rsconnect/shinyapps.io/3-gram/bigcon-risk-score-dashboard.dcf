@@ -1,0 +1,13 @@
+name: bigcon-risk-score-dashboard
+title: bigcon-risk-score-dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15762604
+bundleId: 11037412
+url: https://3-gram.shinyapps.io/bigcon-risk-score-dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: cust_app.R|mkt_app.R|sales_app.R

@@ -1,0 +1,13 @@
+name: cust-mkt-risk-score-dashboard
+title: cust-mkt-risk-score-dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15762858
+bundleId: 11037540
+url: https://3-gram.shinyapps.io/cust-mkt-risk-score-dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|mkt_app.R|sales_app.R|sales_model_xgb_regression.rds

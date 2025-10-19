@@ -210,6 +210,7 @@ split_data <- function(data, train_prop = 0.8, seed = 2025) {
   # return list
   list(
     closed_df = closed_df,
+    open_df = open_df,
     open_train = train_data,
     open_test = test_data
   )

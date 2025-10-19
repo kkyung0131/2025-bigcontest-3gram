@@ -47,7 +47,7 @@ predict_sales_amt_cat <- function(models, newdata) {
   
   preds_ensemble <- preds_all %>%
     mutate(ensemble = rowMeans(across(everything()))) %>%
-    bind_cols(newdata %>% select(sales_amt_cat_median, ym_quarter)) %>%
+    bind_cols(newdata %>% select(id, ym_quarter)) %>%
     mutate(ensemble = pmax(pmin(ensemble, 6), 1))  # clipped to [1,6]
   
   return(preds_ensemble)
@@ -100,7 +100,7 @@ predict_cust_score <- function(models, new_data) {
       risk_score_scaled = risk_score_scaled
     )
   )
-  
+
   return(results)
 }
 
@@ -133,7 +133,9 @@ predict_mkt_score <- function(model, new_data){
     (x - 1) / (4 - 1)
   }
   
-  area_final_scores <- area_min_max_scale(risk_score)
-  return(area_final_scores)
+  mkt_final_scores <- area_min_max_scale(risk_score)
+  results <- bind_cols(preds, mkt_final_scores)
+  
+  return(results)
 }
 

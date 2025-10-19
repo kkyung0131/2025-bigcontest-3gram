@@ -1,0 +1,13 @@
+name: risk-score-dashboard
+title: risk-score-dashboard
+username: 3-gram
+account: 3-gram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15763815
+bundleId: 11052022
+url: https://3-gram.shinyapps.io/risk-score-dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|cust_app.R|mkt_app.R|persona_b_keep.csv|persona_b_true.csv|sales_app.R|sales_model_xgb_regression.rds

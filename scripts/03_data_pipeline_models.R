@@ -342,12 +342,13 @@ assign_cust_group <- function(df, train_ref = NULL) {
 #'
 #' @param df Input dataframe
 #' @param mh Whether to apply missing value handling (default: TRUE)
+#' @param median Whether to summarize quarterly data using median (default: FALSE)
 #' @param prefix Prefix for output file name (optional)
 #' @param train_ref Optional training reference for cut-off calculation (used for test set)
 #' @param create_target Whether to create `cust_pattern` target variable (default: TRUE)
 #' @return Preprocessed dataframe, with `cust_pattern` if `create_target = TRUE`
-process_pipeline_cust <- function(df, mh = TRUE, prefix = "train", 
-                             train_ref = NULL, create_target = TRUE) {
+process_pipeline_cust <- function(df, mh = TRUE, median = FALSE,
+                                  prefix = "train", train_ref = NULL, create_target = TRUE) {
 
   df <- df %>%
     mutate(ym = as.Date(ym))
@@ -363,7 +364,7 @@ process_pipeline_cust <- function(df, mh = TRUE, prefix = "train",
     df <- fill_missing_proportion(df, vars3)
   }
   
-  df_merged <- common_process(df, median = FALSE)
+  df_merged <- commom_process(df, median = median)
   
   if (!is.null(train_ref)) {
     df_merged <- df_merged %>%
@@ -437,10 +438,12 @@ assign_cluster_area <- function(df, centers = 4, seed = 123) {
 #'
 #' @param df Input dataframe
 #' @param mh Whether to apply missing value handling (default: TRUE)
+#' @param median Whether to summarize quarterly data using median (default: FALSE)
 #' @param prefix Prefix for output file (optional)
 #' @param create_target Whether to create cluster target (default: TRUE)
 #' @return Preprocessed dataframe with lag, rolling stats, and difference features
-process_pipeline_mkt <- function(df, mh = TRUE, prefix = "train", create_target = TRUE) {
+process_pipeline_mkt <- function(df, mh = TRUE, median = FALSE, 
+                                 prefix = "train", create_target = TRUE) {
   
   df <- df %>%
     mutate(ym = as.Date(ym))
@@ -456,7 +459,7 @@ process_pipeline_mkt <- function(df, mh = TRUE, prefix = "train", create_target 
     df <- fill_missing_proportion(df, vars3)
   }
   
-  df <- common_process(df, median = FALSE)
+  df <- commom_process(df, median = median)
   
   if (create_target) {
     df_final <- assign_cluster_area(df)
@@ -467,7 +470,7 @@ process_pipeline_mkt <- function(df, mh = TRUE, prefix = "train", create_target 
   }
   
   df_final  <- df_final  %>% 
-    select(-c(close_rat, open_cnt, close_cnt, open_rat, id))  
+    select(-c(close_rat, open_cnt, close_cnt, open_rat))  
   
   # Define top variables for lag, rolling stats, and difference features
   top_variables <- c(
