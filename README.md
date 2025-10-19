@@ -44,10 +44,12 @@
 ---
 
 ## 🔹 Shiny App 화면 예시
-- 아래 이미지를 클릭하거나 `/app` 폴더에서 자세한 설명을 확인할 수 있습니다.
-![대시보드 미리보기](<img width="2517" height="1516" alt="image" src="https://github.com/user-attachments/assets/f8100bb8-05e4-4fd4-bb11-c6e09dc386f9" />)
+<img width="1500" height="917" alt="image" src="https://github.com/user-attachments/assets/7b4afe82-3b84-483d-b51f-c8993d9cdd1e" />
 
-- 아래 링크를 통해 웹 브라우저에서 직접 CORE-AI 대시보드를 실행할 수 있습니다.
+
+- `/app` 폴더에서 Shiny App에 대한 자세한 설명을 확인할 수 있습니다.
+
+- 아래 링크를 통해 웹 브라우저에서 직접 CORE-AI 대시보드를 실행할 수 있습니다.  
   🔗 [CORE-AI 성동구 소상공인 위기 진단 대시보드](https://3-gram.shinyapps.io/risk-score-dashboard/)
 
 ---
