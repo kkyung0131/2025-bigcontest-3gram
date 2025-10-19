@@ -1,0 +1,3 @@
+# main.R
+# CORE-AI
+
