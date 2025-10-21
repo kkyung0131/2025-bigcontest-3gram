@@ -1,5 +1,5 @@
 # CORE-AI: Composite Of Risk Ensemble-AI
-**앙상블 아키텍처를 활용한 가맹점 위험 요인 분해 모델**을 개발하고,
+**앙상블 아키텍처를 활용한 가맹점 위험 요인 분해 모델**을 설계하고,
 이를 활용하여 **성동구 소상공인 위기 진단 대시보드**를 구현합니다.
 
 제13회 빅콘테스트 2025 AI·데이터 경진대회 AI데이터분석 분야 <Team. 쓰리그램(3-gram)>
@@ -15,12 +15,13 @@
 ---
 
 ## 🔹 모델 개요
-
+<img width="1291" height="571" alt="image" src="https://github.com/user-attachments/assets/f3c026ea-9579-4581-bdf4-8290b5e8a6f8" />
 
 ---
 
 ## 🔹 프로젝트 구조
 
+```text
 🗂️2025-bigcontest-3gram/  
 ├── app/  
 │   ├── models/                         
@@ -34,12 +35,13 @@
 │   ├── processed/    # 전처리 후 저장  
 │   └── external/     # 외부 데이터   
 ├──scripts/  
-   ├── 01_load_packages.R           # 패키지 로드  
-   ├── 02_basic_preprocessing.R     # 데이터 전처리 함수  
-   ├── 03_data_pipeline_models.R    # 모델별 데이터 파이프라인  
-   ├── 04_train_models.R            # 위험 요인별 모델 학습  
-   ├── 05_predict.R                 # 예측 및 위험 스코어 계산  
-   └── 06_final_model.R             # 최종 모델 앙상블  
+│  ├── 01_load_packages.R           # 패키지 로드  
+│  ├── 02_basic_preprocessing.R     # 데이터 전처리 함수  
+│  ├── 03_data_pipeline_models.R    # 모델별 데이터 파이프라인  
+│  ├── 04_train_models.R            # 위험 요인별 모델 학습  
+│  ├── 05_predict.R                 # 예측 및 위험 스코어 계산  
+│  └── 06_final_model.R             # 최종 모델 앙상블  
+```
 
 ---
 
