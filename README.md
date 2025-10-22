@@ -57,6 +57,7 @@
 ---
 
 ## 🔹 보고서
+[AI데이터분석분야_쓰리그램팀.pdf](https://github.com/user-attachments/files/23047341/AI._.pdf)
 
 ---
 
